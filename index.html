@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>PASSWORD GENERATOR</h1>
+
+        <div class="display">
+            <input readonly placeholder="PASSWORD" class="input" data-passwordDisplay>
+            <button class="copy-btn"data-copy>
+                <img src="./img/copy.svg" alt="copy-btn" data-copyMsg class="img">
+            </button>
+        </div>
+
+        <div class="input2">
+            <div class="pswdLen">
+                <h2>Password Length</h2>
+                <div class="len" data-lengthNumber></div>
+            </div>
+
+            <input type="range" name="" id="slider" data-lengthSlider class="slider">
+
+            <div class="options">
+                <div class="op op1">
+                    <input type="checkbox" name="op1" id="upperCase">
+                    <label id="uppercase">Includes Uppercase letters</label>
+                </div>
+
+                <div class="op op2">
+                    <input type="checkbox" name="op1" id="op1"id="lowercase">
+                    <label id="lowercase">Includes Lowercase letters</label>
+                </div>
+
+                <div class="op op3">
+                    <input type="checkbox" name="op1" id="op1"id="numbers">
+                    <label id="numbers">Includes Numbers</label>
+                </div>
+
+                <div class="op op4">
+                    <input type="checkbox" name="op1" id="op1"id="symbols">
+                    <label id="symbols">Includes Symbols</label>
+                </div>
+            </div>
+
+            <div class="strength">
+                <h2>Strength</h2>
+                <div class="circle" data-indicator></div>
+            </div>
+
+            <button class="genratePswd">generate password</button>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
